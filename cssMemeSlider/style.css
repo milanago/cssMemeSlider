@@ -1,0 +1,112 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Georgia-regular', Times, serif;
+}
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 100vh;
+    width: 100vw;
+    background-color: pink;
+    overflow: hidden;
+}
+.slider {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    }
+img {
+    width: 50em;
+    height: 30em;
+}
+
+.img-inner {
+    width: 400%;
+    display: flex;
+   }
+
+.img-container {
+    overflow: hidden;
+    }
+    .card {
+        display: flex;
+        justify-content: center;
+        width: 25%;
+    }
+    input {
+        display: none;
+    } 
+    .text-button {
+        width: 25%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .buttons {
+        display: flex;
+        gap: 10px;
+    }
+    label {
+        width: 40px;
+        height: 40px;
+        background-color: blue;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    label:active {
+        background-color: brown;
+    }
+    .text {
+        display: flex;
+        width: 4%;
+        overflow: hidden;
+    }
+
+
+    input[type="radio"]:nth-child(1):checked ~ .slider .img-inner{
+       margin-left: 0;
+         }
+         input[type="radio"]:nth-child(2):checked ~ .slider .img-inner{
+            margin-left: -100%;
+              }
+              input[type="radio"]:nth-child(3):checked ~ .slider .img-inner{
+                margin-left: -200%;
+                  }
+                  input[type="radio"]:nth-child(4):checked ~ .slider .img-inner{
+                    margin-left: -300%;
+                      }
+
+
+
+.slider .img-inner {
+    transition: all 0.7s ease-in-out;
+}
+.inner-text {
+    width: 400%;
+    display: flex;
+}
+.text-container {
+    overflow: hidden;
+    }
+    .text-card {
+        width: 25%;
+    }
+
+    input[type="radio"]:nth-child(1):checked ~ .slider .inner-text{
+        margin-left: 0;
+          }
+          input[type="radio"]:nth-child(2):checked ~ .slider .inner-text{
+             margin-left: -100%;
+               }
+               input[type="radio"]:nth-child(3):checked ~ .slider .inner-text{
+                 margin-left: -200%;
+                   }
+                   input[type="radio"]:nth-child(4):checked ~ .slider .inner-text{
+                     margin-left: -300%;
+                       }
+                       .slider .inner-text {
+                        transition: all 0.7s ease-in-out;
+                    }
