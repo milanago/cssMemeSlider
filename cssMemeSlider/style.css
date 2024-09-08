@@ -145,3 +145,24 @@ input[type="radio"]:nth-child(1):checked ~ .slider #btn-one{
                     }
 
 
+@media (max-width: 900px) {
+    img {
+        width: 30em;
+        height: 20em;
+    }
+    p {
+        text-align: center;
+    }
+    .text-button {
+        gap: 1em;
+flex-wrap: wrap-reverse;
+justify-content: center;
+   }
+}
+
+@media (max-width: 500px) {
+    img {
+        width: 20em;
+        height: 12em;
+    }
+}
